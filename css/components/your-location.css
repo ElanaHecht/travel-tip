@@ -1,0 +1,8 @@
+.your-location {
+    box-shadow: var(--border-shadow-light);
+    border-radius: 2px;
+    background-color: var(--main);
+    font-size: 0.8rem;
+    height: 100%;
+    text-align: center;
+}

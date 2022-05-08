@@ -1,0 +1,8 @@
+.locations-container {
+    border-radius: 2px;
+    box-shadow: var(--border-shadow-light);
+    background-color: var(--main);
+    text-align: center;
+    padding: 15px;
+    min-height: fit-content;
+}

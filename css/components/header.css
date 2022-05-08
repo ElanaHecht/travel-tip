@@ -1,0 +1,19 @@
+.main-header {
+    /* height: 10vh; */
+    background-image: linear-gradient(to bottom right, var(--grey), var(--bluelight));
+}
+
+.header-content {
+    height: 10vh;
+}
+
+.search-input {
+    height: 35px;
+    border-radius: 1px;
+    margin-right: 40px;
+    width: 200px;
+}
+
+.logo {
+    font-family: 'Russo One', sans-serif;
+}

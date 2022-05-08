@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>TravelTip</title>
+</head>
+
+<body>
+    <header class="main-header ">
+        <div class="header-content main-layout flex space align-items">
+            <h1 class="logo">TravelTip</h1>
+            <div class="my-location-container">
+                <input type="search" class="search-input" placeholder="   Enter Location" onchange="onFindPlace(this)">
+                <button onclick="onGetUserPos()" class="btn btn-user-pos">Get User Position</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main-container main-layout">
+        <div class="your-location flex align-items justify-content">
+            <p><span class="user-pos"></span></p>
+        </div>
+
+
+        <div id="map" class="map-container" style="width: 100%; height: 400px;"></div>
+        <button onclick="onAddMarker()" class="btn btn-add-marker">Add Marker Speific Location</button>
+        <button onclick="onCopyLink(this)" class="btn btn-get-locs">Copy Link</button>
+        <button onclick="onPanTo()" class="btn btn-pan">Pan Map to Tokyo</button>
+        <!-- <button onclick="onMoveUser()" class="btn btn-move-user">Move to my location</button> -->
+
+        <div class="locations-container">
+            <p>Locations</p>
+            <hr>
+            <span class="locs"></span>
+        </div>
+        <div class="weather-container flex justify-content align-items column">
+
+        </div>
+    </main>
+
+
+
+
+    <script src="lib/axios.js"></script>
+    <script type="module" src="js/app.controller.js"></script>
+</body>
+
+</html>

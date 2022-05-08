@@ -1,0 +1,19 @@
+.btn {
+    border: none;
+    background-color: var(--green);
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: var(--border-shadow-light);
+    font-family: 'Poppins', sans-serif;
+    min-width: 55px;
+}
+
+.btn:hover {
+    background-color: var(--bluelight);
+    cursor: pointer;
+}
+
+.btn-user-pos {
+    width: 160px;
+    height: 35px;
+}

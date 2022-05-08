@@ -1,0 +1,5 @@
+.map-container {
+    border-radius: 2px;
+    padding: 10px;
+    box-shadow: var(--border-shadow-light);
+}
